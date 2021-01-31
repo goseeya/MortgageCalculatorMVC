@@ -11,7 +11,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-		    ViewLoader<BorderPane, MortgageCalculatorController> viewLoader = new ViewLoader<>("view/Dialog.fxml");
+		    ViewLoader<BorderPane, MortgageCalculatorController> viewLoader = new ViewLoader<>("view/MortgageCalculator.fxml");
 			
 			BorderPane sceneRoot = viewLoader.getLayout();
 			MortgageCalculatorController mortgageCalculatorController = viewLoader.getController();
@@ -22,7 +22,7 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			
 			primaryStage.setResizable(false);
-			primaryStage.setTitle("DialogBox");
+			primaryStage.setTitle("MortgageCalculator");
 			primaryStage.centerOnScreen();
 
 
