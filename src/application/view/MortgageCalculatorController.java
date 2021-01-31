@@ -21,8 +21,9 @@ public class MortgageCalculatorController {
 
 	@FXML
 	void onButtonClick(ActionEvent event) {
+		// calculate from inputFields
 		Alert alert = new Alert(AlertType.CONFIRMATION);
-		alert.setTitle("This is alert title");
+		alert.setTitle("Calculater mortgage");
 		alert.setContentText(button.getText());
 		alert.show();
 		mortgageCalculatorStage.close();

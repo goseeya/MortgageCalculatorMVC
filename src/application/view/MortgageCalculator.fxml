@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="300.0" prefWidth="400.0" styleClass="background" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applicationapplication.view.MortgageCalculatorController">
    <children>
       <GridPane layoutX="131.0" layoutY="96.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -25,7 +24,7 @@
             <Label text="Kwota kredytu" />
             <Label text="Stopa procentowa" GridPane.rowIndex="1" />
             <Label text="Okres kredytu" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefWidth="200.0" text="Oblicz" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="button" mnemonicParsing="false" onAction="#onButtonClick" prefWidth="200.0" text="Oblicz" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <TextField GridPane.columnIndex="1" />
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
